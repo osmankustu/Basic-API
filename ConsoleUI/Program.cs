@@ -1,28 +1,21 @@
-﻿
-using Business.Concrete;
-using DataAccess.Abstract;
-using DataAccess.Concrete.InMemory;
-using Entities.Concrete;
+﻿using Business.Concrete;
+using DataAccess.Concrete.EntityFramework;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
 namespace ConsoleUI
 {
     public class Program
     {
         static void Main(string[] args)
         {
-            ProductManager productManager = new ProductManager(new InMemoryProductDal());
 
-            foreach (var product in productManager.GetAll())
+            ProductManager manager = new ProductManager(new EfProductDal());
+
+            foreach (var product in manager.GetByUnitsPrice(40,100))
             {
-                Console.WriteLine(product.ProductName +" "+ product.UnitPrice);
+                Console.WriteLine(product.ProductName +" Fiyat : "+ product.UnitPrice);
             }
-            
-            Console.ReadKey();  
+             
+             
         }
     }
 }
