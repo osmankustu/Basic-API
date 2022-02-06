@@ -10,7 +10,7 @@ namespace Core.Utilities.Results
     {
         public DataResult(T data, bool succes,string massage):base(succes, massage)
         {
-                
+                Data = data;
         }
 
         public DataResult(T data,bool succes):base(succes)
