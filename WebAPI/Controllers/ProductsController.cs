@@ -44,6 +44,7 @@ namespace WebAPI.Controllers
             }
             return BadRequest(result);
         }
+        //Http odt detail yazılacak 
 
         [HttpPost("add")]
         public IActionResult Add(Product product)
