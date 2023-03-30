@@ -1,5 +1,5 @@
 
-# [Now UI Dashboard Angular](https://creativetimofficial.github.io/now-ui-dashboard-angular) [![version][version-badge]][CHANGELOG] [![license][license-badge]][LICENSE]
+# [Optik Yönetim Sistemi Frontend] [![version][version-badge]][CHANGELOG] [![license][license-badge]][LICENSE]
 
 ![alt text](https://r.resimlink.com/v-8p0IRE.png)
 
